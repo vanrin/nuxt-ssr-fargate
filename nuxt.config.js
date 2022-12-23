@@ -40,6 +40,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-healthcheck',
   ],
   publicRuntimeConfig: {
     pageHeadLine: process.env.PAGE_HEAD_LINE || 'SIGN UP TODAY',

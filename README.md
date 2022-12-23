@@ -14,9 +14,13 @@ $ docker-compose up -d
 
 Specific configuration for docker deployment
 
-```
+```json
 export default {
   ssr: true,
+  modules: [
+    // Module to provide health check endpoint
+    'nuxt-healthcheck',
+  ],
   publicRuntimeConfig: {
     pageHeadLine: process.env.PAGE_HEAD_LINE || 'SIGN UP TODAY',
   }
