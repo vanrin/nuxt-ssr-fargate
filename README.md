@@ -18,7 +18,6 @@ Specific configuration for docker deployment
 export default {
   ssr: true,
   modules: [
-    // Module to provide health check endpoint
     'nuxt-healthcheck',
   ],
   publicRuntimeConfig: {
