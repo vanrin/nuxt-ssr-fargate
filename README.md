@@ -1,4 +1,4 @@
-# nuxt-ssr-fargate
+# NuxtJs Server Side Rendering with Docker Container
 
 ## Build Setup
 
@@ -14,10 +14,11 @@ $ docker-compose up -d
 
 Specific configuration for docker deployment
 
-```json
+```javascript
 export default {
   ssr: true,
   modules: [
+    // Module to provide health check endpoint
     'nuxt-healthcheck',
   ],
   publicRuntimeConfig: {
