@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-ssr-fargate',
+    title: 'Fargate Demo',
     htmlAttrs: {
       lang: 'en'
     },
@@ -41,6 +41,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
+  publicRuntimeConfig: {
+    pageHeadLine: process.env.PAGE_HEAD_LINE || 'SIGN UP TODAY',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
